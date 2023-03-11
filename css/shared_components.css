@@ -1,0 +1,286 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    overflow: initial;
+    font-size: 14px;
+    color: #292929;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    font-family: "Roboto", Helvetica;
+}
+
+section {
+    display: block;
+}
+
+* {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: #139139;
+    font-weight: normal;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+img {
+    border: none;
+    overflow: hidden;
+    font-size: 10px;
+    color: transparent;
+    vertical-align: middle;
+    margin: auto;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+.animated {
+    animation-duration: 1.25ss;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+#header {
+    width: 100%;
+    height: 55px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    max-width: 1290px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+#header .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#header .col30 {
+    width: 30%;
+    padding: 0px 15px;
+    float: left;
+}
+
+#header .col70 {
+    width: 70%;
+    padding: 10px 0;
+    float: right;
+}
+
+#header .box-menu {
+    text-align: right;
+    margin: 0;
+}
+
+#header .box-menu .primary-menu {
+    list-style: none;
+    margin: 0;
+}
+
+#header .box-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+#header .box-menu .primary-menu li a {
+    display: block;
+    color: #292929;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 35px;
+    transition: all .2s ease-in-out;
+}
+
+#header .box-menu ul li:hover a{
+    display: block;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 35px;
+    transition: all .2s ease-in-out;
+    color: #139139;
+}
+
+#header .box-menu .primary-menu li a.text-blink {
+    animation: green-blink 700ms infinite;
+}
+
+#header .logo {
+    padding: 5px 0;
+}
+
+#header .logo img {
+    height: 45px;
+}
+
+#page {
+    position: relative;
+    background-color: #fff;
+}
+
+#footer {
+    background-color: #f4f4f4;
+}
+
+#footer .top-footer {
+    padding: 50px 0px;
+}
+
+#footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#footer .col30 {
+    width: 30%;
+    padding: 0px 15px;
+}
+
+.logo-footer img {
+    max-width: 100%;
+}
+
+#footer .col70 {
+    width: 70%;
+    padding: 0px 15px;
+}
+
+#footer .footer-info {
+    margin-bottom: 30px;
+}
+
+#footer .footer-info h3 {
+    color: #292929;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#footer .footer-info p {
+    color: #292929;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#footer .footer-info .social a {
+    color: #139139;
+    font-size: 17px;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    background-color: #EDF2F7;
+    transition: all .2s ease-in-out;
+}
+
+#footer .foo-info .social a .social-label {
+    padding-left: 6px;
+}
+
+#footer .bottom-footer {
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+#footer .bottom-footer .copyright {
+    color: #292929;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section {
+    position: relative;
+    padding: 70px 0px;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-head .section-title {
+    color: #fff;
+    font-size: 48px;
+}
+
+.btn-cta .cta {
+    padding: 15px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #139139;
+}
+
+.btn-cta .cta:hover {
+    background-color: #718096;
+    color:#fff;
+}
+
+.table {
+    width: 100%;
+    display: table;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
