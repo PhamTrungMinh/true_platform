@@ -22,7 +22,7 @@ section {
 }
 
 * {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    font-family: "Roboto", Helvetica;
     margin: 0;
     padding: 0;
     border: 0;
@@ -229,7 +229,12 @@ h4 {
     transition: all .2s ease-in-out;
 }
 
-#footer .foo-info .social a .social-label {
+#footer .footer-info .social a:hover{
+    color:#fff;
+    background-color: #139139;
+   }
+
+#footer .footer-info .social a .social-label {
     padding-left: 6px;
 }
 
