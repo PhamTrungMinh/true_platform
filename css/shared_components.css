@@ -151,6 +151,10 @@ h4 {
     color: #139139;
 }
 
+#header .box-menu ul li:hover a.text-blink{
+    animation: none;
+}
+
 #header .box-menu .primary-menu li a.text-blink {
     animation: green-blink 700ms infinite;
 }
