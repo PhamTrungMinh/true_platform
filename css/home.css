@@ -189,55 +189,6 @@
     overflow: hidden;
 }
 
-.slick-dotted .slick-slider {
-    margin-bottom: 30px;
-}
-
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-prev {
-    left: 10px;
-    z-index: 9;
-}
-
-.slick-next, .slick-prev {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: 0;
-    background: 0 0;
-    opacity: 1;
-    cursor: pointer;
-}
-
-.slick-prev:before {
-    content: "\e6b9";
-}
-
-.slick-next:before, .slick-prev:before {
-    font-family: ap;
-    font-size: 50px;
-    line-height: 1;
-    color: #fff;
-    z-index: 100;
-}
-
 .section-why {
     background-color: #fff;
     position: relative;
@@ -253,6 +204,10 @@
 .section-why .col50 {
     width: 50%;
     padding: 0px 15px;
+}
+
+.why-image {
+    margin-bottom: 0px !important;
 }
 
 .why-main .why-item {
@@ -323,88 +278,129 @@
     box-sizing: border-box
 }
 
-.slideshow-container {
-    position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    max-width:fit-content;
-    display: blox;
-    margin-left: auto;
-    margin-right: auto; 
-    display: none;
-}
-
-.prev,
-.next {
-    cursor: pointer;
+.autoplay .slick-next, .autoplay .slick-prev {
+    font-size: 0;
+    line-height: 0;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover,
-.next:hover {
-    background-color: white;
-}
-
-
-.dot {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    transform: translate(0, -50%);
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.autoplay .slick-next i:before, .autoplay .slick-prev i:before {
+	font-size: 50px;
+	line-height: 1;
+	color: #fff;
+	z-index: 100;
+}
+
+.autoplay .slick-prev {
+    left: 10px;
+    z-index: 10;
+}
+
+.autoplay .slick-next {
+    right: 10px;
+}
+
+.autoplay .slick-next:before, .autoplay .slick-prev:before {
+    font-size: 0;
+}
+
+.autoplay .slick-dots {
+    bottom: 25px;
+}
+
+.autoplay .slick-dots li button {
     border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
+.autoplay .slick-dots li.slick-active button:before {
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #139139;
+    opacity: 1;
+    border-radius: 50%;
 }
 
+.autoplay .slick-dots li button:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 50%;
+}
 
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+.looking-slider .item {
+    text-align: center;
+    position: relative;
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
-    }
+.looking-slider .item img {
+    width: 100%;
+}
 
-    to {
-        opacity: 1
-    }
+.slick-slide img {
+    display: block;
+}
+
+.looking-slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 90px 0px 0px 150px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.looking-slider-inner .looking-slider-contents {
+    max-width: 55%;
+}
+
+.looking-slider-inner .looking-slider-contents h3 {
+    color: #139139;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.looking-slider-inner .looking-slider-contents p {
+    color: #292929;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
 }

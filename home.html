@@ -3,16 +3,30 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <link rel="shortcut icon" href="css/sources/img/fav.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/shared_components.css">
     <link rel="stylesheet" type="text/css" href="css/keyframes.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Careers - True Platform - Tuyển dụng</title>
 </head>
 
 <body>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <!-- Thanh tiêu đề trên cùng -->
     <div id="header">
@@ -126,145 +140,203 @@
                 <div class="section-head animated fadeIn">
                     <h2 class="section-title ">What we are looking from you</h2>
                 </div>
-
             </div>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <a href=""><img src="https://datax-talent.basecdn.net/platform/slider/slider-1.jpg"
-                            style="width:100%"></a>
-                </div>
-                <div class="mySlides fade">
-                    <a href=""><img src="https://datax-talent.basecdn.net/platform/slider/slider-2.jpg"
-                            style="width:100%"></a>
-                </div>
-                <div class="mySlides fade">
-                    <a href=""><img src="https://datax-talent.basecdn.net/platform/slider/slider-3.jpg"
-                            style="width:100%"></a>
-                </div>
-                <div class="mySlides fade">
-                    <a href=""><img src="https://datax-talent.basecdn.net/platform/slider/slider-4.jpg"
-                            style="width:100%"></a>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+
+            <div class="looking-slider slick-initialized slick-slider slick-dotted">
+                <div class="slick-list autoplay">
+                    <div class="item slick-slide">
+                        <img src="css/sources/img/slider-1.jpg" alt="">
+                        <div class="looking-slider-inner">
+                            <div class="looking-slider-contents">
+                                <h3>Solid background knowledge</h3>
+                                <p>A solid foundation of your major helps you succeed anywhere. If you are a Software
+                                    Engineer, it's great that you have BS or higher in Information Technology, Computer
+                                    Science, Mathematics or any related field. Make sure you hold the key to success of
+                                    any high performance and scalable product: Data Structures &amp; Algorithms,
+                                    Programming Language.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slick-slide slick-current slick-active">
+                        <img src="css/sources/img/slider-2.jpg" alt="">
+                        <div class="looking-slider-inner">
+                            <div class="looking-slider-contents">
+                                <h3>Product mindset &amp; Problem solving</h3>
+                                <p>Building products with True Platform, you can play with ideas and iterations daily to
+                                    solve the hardest problems. Always ask “why” to make sure you deliver real values to
+                                    real customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slick-slide">
+                        <img src="css/sources/img/slider-3.jpg" alt="">
+                        <div class="looking-slider-inner">
+                            <div class="looking-slider-contents">
+                                <h3>Ambition to take challenges</h3>
+                                <p>Keep dreaming big to build a global product company from first steps! Being earliest
+                                    members comes with a great deal of challenges, but we believe your willingness to
+                                    learn can drive you to be a part of something really big, really innovative, and
+                                    really impactful.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slick-slide slick-cloned">
+                        <img src="css/sources/img/slider-4.jpg" alt="">
+                        <div class="looking-slider-inner">
+                            <div class="looking-slider-contents">
+                                <h3>"The best or nothing" spirit</h3>
+                                <p>It wasn't easy to accept the fact that if we couldn't work hard enough, we could
+                                    never make anything special. Here we want to build a special company, and we need
+                                    that spirit from you. Try your best, and create extraordinary outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <script src="main.js"></script>
-            <!-- <div class="slick-slider">
-                <button class="slick-prev slick-prev:before" type="button">
-                    <i class='fas fa-chevron-left' style='font-size:24px'></i>
-                    "Previous"
-                </button>
-            </div> -->
 
+            <!-- <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <a href="">
+                            <img src="css/sources/img/slider-1.jpg"
+                                style="width:100%">
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="">
+                            <img src="css/sources/img/slider-2.jpg"
+                                style="width:100%">
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="">
+                            <img src="css/sources/img/slider-3.jpg"
+                                style="width:100%">
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="">
+                            <img src="css/sources/img/slider-4.jpg"
+                                style="width:100%">
+                        </a>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div> -->
 
-            <!-- </section> -->
+        </section>
 
-            <!-- Why you should join us -->
-            <section class="section section-why">
-                <div class="section-head animated fadeIn">
-                    <h2 class="section-title">Why you should join us</h2>
+        <!-- Why you should join us -->
+        <section class="section section-why">
+            <div class="section-head animated fadeIn">
+                <h2 class="section-title">Why you should join us</h2>
+            </div>
+            <div class="row">
+                <div class="col50">
+                    <div class="why-image slick-initialized slick-slider slick-dotted">
+                        <div class="slick-list autoplay">
+                            <img src="css/sources/img/why-image-1.jpg" alt="">
+                            <img src="css/sources/img/why-image-2.jpg" alt="">
+                            <img src="css/sources/img/why-image-3.jpg" alt="">
+                            <img src="css/sources/img/why-image-4.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="row">
-                    <!-- Chưa xong -->
-                    <div class="col50">
 
-                    </div> -->
-
-                    <div class="col50">
-                        <div class="why-main">
-                            <div class="why-item">
-                                <h3>Fast-track career path</h3>
-                                <div class="desc">
-                                    Enhance your expertise through a comprehensive training program, constant 1-1
-                                    guidelines from leaders, senior members, and great opportunities to join a full
-                                    cycle of building real products for the global market.
-                                </div>
+                <div class="col50">
+                    <div class="why-main">
+                        <div class="why-item">
+                            <h3>Fast-track career path</h3>
+                            <div class="desc">
+                                Enhance your expertise through a comprehensive training program, constant 1-1
+                                guidelines from leaders, senior members, and great opportunities to join a full
+                                cycle of building real products for the global market.
                             </div>
-                            <div class="why-item">
-                                <h3>Talented colleagues</h3>
-                                <div class="desc">
-                                    Work with a team of enthusiastic and professional Product Builders who have already
-                                    built a highly large-scale system (7000+ enterprises, hundreds of thousands users
-                                    each month, 60+ millions of pageviews); come from top universities (Stanford, UCLA,
-                                    HUST, etc.).
-                                </div>
+                        </div>
+                        <div class="why-item">
+                            <h3>Talented colleagues</h3>
+                            <div class="desc">
+                                Work with a team of enthusiastic and professional Product Builders who have already
+                                built a highly large-scale system (7000+ enterprises, hundreds of thousands users
+                                each month, 60+ millions of pageviews); come from top universities (Stanford, UCLA,
+                                HUST, etc.).
                             </div>
-                            <div class="why-item">
-                                <h3>Benefits package</h3>
-                                <div class="desc">
-                                    The package will be upgraded day by day: Competitive salaries plus bonus based on
-                                    performance, Employee stock ownership plan, 4 times review per year, Days off and
-                                    holidays, Health insurance, Team building and company trips, etc.
-                                </div>
+                        </div>
+                        <div class="why-item">
+                            <h3>Benefits package</h3>
+                            <div class="desc">
+                                The package will be upgraded day by day: Competitive salaries plus bonus based on
+                                performance, Employee stock ownership plan, 4 times review per year, Days off and
+                                holidays, Health insurance, Team building and company trips, etc.
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section section-newspaper">
-                <div class="container">
-                    <div class="section-head">
-                        <h2 class="section-title">More about True Platform</h2>
+        <section class="section section-newspaper">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">More about True Platform</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://vnexpress.net/startup-cong-nghe-viet-nam-nhan-dau-tu-3-5-trieu-usd-4466939.html"
+                                target="_blank">
+                                <img src="css/sources/img/vnexpress.png" alt="">
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://vnexpress.net/startup-cong-nghe-viet-nam-nhan-dau-tu-3-5-trieu-usd-4466939.html"
-                                    target="_blank">
-                                    <img src="css/sources/img/vnexpress.png" alt="">
-                                </a>
-                            </div>
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://cafebiz.vn/true-platform-startup-moi-cua-nha-sang-lap-basevn-pham-kim-hung-nhan-dau-tu-khung-35-trieu-usd-ngay-tu-vong-hat-giong-20220523095203051.chn"
+                                target="_blank">
+                                <img src="css/sources/img/cafefbiz.png" alt="">
+                            </a>
                         </div>
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://cafebiz.vn/true-platform-startup-moi-cua-nha-sang-lap-basevn-pham-kim-hung-nhan-dau-tu-khung-35-trieu-usd-ngay-tu-vong-hat-giong-20220523095203051.chn"
-                                    target="_blank">
-                                    <img src="css/sources/img/cafefbiz.png" alt="">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://vietnamnet.vn/startup-moi-cua-cha-de-base-vn-goi-von-thanh-cong-3-5-trieu-usd-2022334.html"
+                                target="_blank">
+                                <img src="css/sources/img/vietnamnet.png" alt="">
+                            </a>
                         </div>
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://vietnamnet.vn/startup-moi-cua-cha-de-base-vn-goi-von-thanh-cong-3-5-trieu-usd-2022334.html"
-                                    target="_blank">
-                                    <img src="css/sources/img/vietnamnet.png" alt="">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://e27.co/base-vn-founders-new-startup-true-platform-nets-us3-5m-seed-funding-20220523/"
+                                target="_blank">
+                                <img src="css/sources/img/e27.png" alt="">
+                            </a>
                         </div>
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://e27.co/base-vn-founders-new-startup-true-platform-nets-us3-5m-seed-funding-20220523/"
-                                    target="_blank">
-                                    <img src="css/sources/img/e27.png" alt="">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://technode.global/2022/05/23/vietnams-true-platform-raises-3-5m-seed-round-led-by-january-capital/"
+                                target="_blank">
+                                <img src="css/sources/img/technode.png" alt="">
+                            </a>
                         </div>
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://technode.global/2022/05/23/vietnams-true-platform-raises-3-5m-seed-round-led-by-january-capital/"
-                                    target="_blank">
-                                    <img src="css/sources/img/technode.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col25">
-                            <div class="item">
-                                <a href="https://www.techinasia.com/true-platform-seed-funding" target="_blank">
-                                    <img src="css/sources/img/techinasia.png" alt="">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col25">
+                        <div class="item">
+                            <a href="https://www.techinasia.com/true-platform-seed-funding" target="_blank">
+                                <img src="css/sources/img/techinasia.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </div>
 
     <!-- Cuối trang -->
@@ -312,7 +384,7 @@
             </div>
         </div>
     </div>
-   
+
 </body>
 
 </html>

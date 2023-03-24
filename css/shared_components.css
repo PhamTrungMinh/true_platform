@@ -56,7 +56,6 @@ ol, ul {
 
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
 }
 
 h2 {
