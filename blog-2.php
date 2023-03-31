@@ -90,7 +90,7 @@
                                         "<article class='entry content-bg loop-entry type-post'>
                                             <a class='post-thumbnail' href='" .$link ."'>
                                                 <div class='post-thumbnail-inner'>
-                                                    <img width='1024' height='516' src='css/sources/img/blog" .$id. ".png' alt='" .$heading ."' sizes='(max-width: 1024px) 100vw, 1024px'>
+                                                    <img src='css/sources/img/blog" .$id. ".png' alt='" .$heading ."' style='height: 258px;'>
                                                 </div>
                                             </a>
                                             <div class='entry-content-wrap'>

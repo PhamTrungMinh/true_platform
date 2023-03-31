@@ -241,8 +241,7 @@ body.footer-on-bottom #inner-wrap {
     right:0
 }
 
-.wp-site-blocks .post-thumbnail img {
-    flex: 1;
+.post-thumbnail img {
     height: 100%;
     object-fit: cover;
     width: 100%;
