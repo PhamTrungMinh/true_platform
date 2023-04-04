@@ -29,7 +29,7 @@
 
                 <div class="col70">
                     <div class="box-menu">
-                        <ul class="primary-menu">
+                        <ul>
                             <li>
                                 <a href="http://localhost/true_platform/home.html">Home</a>
                             </li>
